@@ -122,7 +122,7 @@
 
 
       // the data file is stored in 8 parts of 12 MB or less (static hosts and private links limit file size); join them first
-      const PARTS = ["data1.br.wasm", "data2.br.wasm", "data3.br.wasm", "data4.br.wasm", "data5.br.wasm", "data6.br.wasm", "data7.br.wasm", "data8.br.wasm"], TOTAL = 93923481;
+      const PARTS = ["data1.br.wasm", "data2.br.wasm", "data3.br.wasm", "data4.br.wasm", "data5.br.wasm", "data6.br.wasm", "data7.br.wasm", "data8.br.wasm"], TOTAL = 94037687;
       async function joinedData(onProgress) {
         const got = new Array(PARTS.length).fill(0);
         const bufs = await Promise.all(PARTS.map(async (p, i) => {
